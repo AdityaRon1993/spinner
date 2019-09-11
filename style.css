@@ -21,7 +21,7 @@
     border-top-color: coral;
     border-right-color: coral;
     border-bottom-color: transparent;   
-    animation: spin .9s linear infinite; 
+    animation: spin 0.7s linear infinite; 
 }
 .complete:before{
     /* margin-bottom: -8px; */
@@ -34,7 +34,7 @@
     font-weight: bolder;
     color: green;
     content:"\2713";
-    animation : end .9s ease-in-out;
+    animation : end 0.8s ease-in-out;
     
 }
 
