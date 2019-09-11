@@ -9,13 +9,16 @@
 </head>
 <body>
     <div class="container">
-        <span>Progress to Upload</span> <span class="spinner loader"></span> 
+        <button class="btn">
+            <p>TEST <span class="spinner loader"></span></p> 
+        </button>
     </div> 
     <button onclick="toggle()">TOGGLE COMPLETE</button> 
     <script>
         function toggle(){
             document.querySelector('.spinner').classList.toggle('loader');
             document.querySelector('.spinner').classList.toggle('complete')
+            // document.querySelector('.complete') ? document.querySelector('.spinner').innerHTML=	'' : document.querySelector('.spinner').innerHTML=''
         }
     </script>
 </body>
