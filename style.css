@@ -34,7 +34,7 @@
     font-weight: bolder;
     color: green;
     content:"\2713";
-    animation : end .3s ease-in-out;
+    animation : end .9s ease-in-out;
     
 }
 
@@ -47,18 +47,35 @@
    }
 }
 @keyframes end{
-    from{
+    0%{
+        color: transparent;
         border: 2px solid transparent;
         border-top-color: coral;
         border-right-color: coral;
         border-bottom-color: transparent;   
-        transform: rotate(135deg)
+        transform: rotate(300deg)
     }
-    to{
+    35%{
+        color: transparent;
+        border: 2px solid transparent;
+        border-top-color: green;
+        border-right-color: green;
+        border-bottom-color: green;   
+        transform: rotate(600deg)
+
+    }
+    50%{
+        color: transparent;
+        border: 2px solid green;
+          
+        transform: rotate(680deg)
+    }
+    100%{
         border: 2px solid green;
         color: green;
-        /* content:"\2713"; */
-        transform: rotate(360deg)
+        content:"\2713";
+        transform: rotate(720deg)
     }
 }
+
 
