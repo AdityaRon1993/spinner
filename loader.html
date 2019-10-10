@@ -8,17 +8,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="spinningContainer">
         <button class="btn">
-            <p>TEST <span class="spinner loader"></span></p> 
+            <p>TEST <span class="FileSpinner FileLoader"></span></p> 
         </button>
     </div> 
-    <button onclick="toggle()">TOGGLE COMPLETE</button> 
+    <button onclick="toggle()">TOGGLE COMPLETE</button>
+    <button onclick="wrong()">Wrong COMPLETE</button> 
     <script>
         function toggle(){
-            document.querySelector('.spinner').classList.toggle('loader');
-            document.querySelector('.spinner').classList.toggle('complete')
+            document.querySelector('.FileSpinner').classList.toggle('FileLoader');
+            document.querySelector('.FileSpinner').classList.toggle('complete')
             // document.querySelector('.complete') ? document.querySelector('.spinner').innerHTML=	'' : document.querySelector('.spinner').innerHTML=''
+        }
+        function wrong(){
+            document.querySelector('.FileSpinner').classList.toggle('FileLoader');
+            document.querySelector('.FileSpinner').classList.toggle('wrong')
         }
     </script>
 </body>

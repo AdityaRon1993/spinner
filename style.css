@@ -1,4 +1,4 @@
-.container{
+.spinningContainer{
     box-sizing: border-box;
     padding: 50px;
     /* border: 1px solid brown; */
@@ -8,7 +8,7 @@
     padding : 10px;
 }
 
-.loader:before{
+.FileLoader:before{
     /* margin-bottom: -8px; */
     display: inline-block;
     content: "\2713";
@@ -36,6 +36,19 @@
     content:"\2713";
     animation : end 0.8s ease-in-out;
     
+}
+.wrong:before{
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 140%;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 0, 0, 0.5);
+    font-weight: bolder;
+    color: rgba(255, 0, 0, 0.5);
+    content:"\00d7";
+    animation : endWrong 0.8s ease-in-out;
 }
 
 @keyframes spin{
@@ -74,6 +87,37 @@
         border: 2px solid green;
         color: green;
         content:"\2713";
+        transform: rotate(720deg)
+    }
+}
+@keyframes endWrong{
+    0%{
+        color: transparent;
+        border: 2px solid transparent;
+        border-top-color: coral;
+        border-right-color: coral;
+        border-bottom-color: transparent;   
+        transform: rotate(300deg)
+    }
+    35%{
+        color: transparent;
+        border: 2px solid transparent;
+        border-top-color: rgba(255, 0, 0, 0.5);
+        border-right-color: rgba(255, 0, 0, 0.5);
+        border-bottom-color: rgba(255, 0, 0, 0.5);   
+        transform: rotate(600deg)
+
+    }
+    50%{
+        color: transparent;
+        border: 2px solid rgba(255, 0, 0, 0.5);
+          
+        transform: rotate(680deg)
+    }
+    100%{
+        border: 2px solid rgba(255, 0, 0, 0.5);
+        color: rgba(255, 0, 0, 0.5);
+        content:"\00d7";
         transform: rotate(720deg)
     }
 }
